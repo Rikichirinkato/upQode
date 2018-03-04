@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UPQODE</title>
+    <link href="style/bootstrap.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1eBghghhQ94sZWt8oaF30T3Rv0U652Ss&callback=initMap"></script>
+    <script src="main/bootstrap.js"></script>
+    <script async src="main/main.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+        <div class="navigation">
+            <a href="#" class="logo">
+                <img src="img/logo.png">
+            </a>
+            <nav>
+                <input type="checkbox" id="menu"/>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="">Home</a>
+                        <ul class="sublist">
+                            <li>
+                                <a href="">One</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Two</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Three</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Four</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="">Products</a>
+                        <ul class="sublist">
+                            <li>
+                                <a href="">One</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Two</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Three</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Four</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="">About</a>
+                        <ul class="sublist">
+                            <li>
+                                <a href="">One</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Two</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Three</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Four</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="">Contacts</a>
+                        <ul class="sublist">
+                            <li>
+                                <a href="">One</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Two</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Three</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Four</a>
+                                <ul class="low">
+                                    <li>
+                                        <a href="">One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Four</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <label class="search-btn" for="search"></label>
+                <input type="checkbox" id="search">
+                <div class="search"> 
+                    <input type="text" name="search">
+                    <input type="submit" name="submit" value="">
+                </div>
+                <label for="menu" class="menu-btn">
+                    <div class="sandwich"></div>
+                    <div class="sandwich"></div>
+                    <div class="sandwich"></div>
+                </label>
+            </nav>
+        </div>
+        <section id="carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>   
+            <div id="start" class="carousel-inner">
+                <section class="active item">
+                    <article class="slide-text">
+                        <h2 class="slide-text-title"><span>CREATIVE</span> DESING AGENCY</h2> 
+                        <p class="slide-text-subtitle">Aenean eros mi, feugiat sed tempus vitae, efficitur sollicitudin dui. Donec viverra eget sapien ac faucibus. Praesent rutrum ligula et nulla vestibulum lacinia. </p>
+                    </article>
+                </section>
+                <section class="item">
+                    <article class="slide-text">
+                        <h2 class="slide-text-title"><span>CREATIVE</span> DESING AGENCY</h2>
+                        <p class="slide-text-subtitle">Aenean eros mi, feugiat sed tempus vitae, efficitur sollicitudin dui. Donec viverra eget sapien ac faucibus. Praesent rutrum ligula et nulla vestibulum lacinia. </p>
+                    </article>
+                </section>
+                <section class="item">
+                    <article class="slide-text">
+                        <h2 class="slide-text-title"><span>CREATIVE</span> DESING AGENCY</h2>
+                        <p class="slide-text-subtitle">Aenean eros mi, feugiat sed tempus vitae, efficitur sollicitudin dui. Donec viverra eget sapien ac faucibus. Praesent rutrum ligula et nulla vestibulum lacinia. </p>
+                    </article>
+                </section>
+            </div>
+        </section>
+      </header>
+      <article class="container">
+          <div class="row">
+              <article class="choose-us">
+                <h2 class="main-title"><span>WHY</span> CHOOSE US</h2>
+                <p class="main-subtitle">Praesent rutrum ligula et nulla vestibulum lacinia.Aenean eros mi, feugiat sed tempus vitae, efficitur sollicitudin dui. Donec viverra eget sapien ac faucibus. Praesent rutrum ligula et nulla vestibulum lacinia. </p>
+                <div class="choose-elem">
+                    <div class="choose-elem-item">
+                        <img src="img/heart.png" alt="heart icon">
+                        <h3>YOUR TITLE</h3>
+                        <p>Praesent rutrum ligula et nulla vestibulum lacinia.</p>
+                        <div class="see-more"><a hreh="#">SEE MORE</a></div>
+                    </div>
+                    <div class="choose-elem-item">
+                        <img src="img/message.png" alt="message icom">
+                        <h3>YOUR TITLE</h3>
+                        <p>Praesent rutrum ligula et nulla vestibulum lacinia.</p>
+                        <div class="see-more"><a hreh="#">SEE MORE</a></div>
+                    </div>
+                    <div class="choose-elem-item">
+                        <img src="img/notebook.png" alt="notebook icon">
+                        <h3>YOUR TITLE</h3>
+                        <p>Praesent rutrum ligula et nulla vestibulum lacinia.</p>
+                        <div class="see-more"><a hreh="#">SEE MORE</a></div>
+                    </div>
+                    <div class="choose-elem-item">
+                        <img src="img/start.png" alt="start icon">
+                        <h3>YOUR TITLE</h3>
+                        <p>Praesent rutrum ligula et nulla vestibulum lacinia.</p>
+                        <div class="see-more"><a hreh="#">SEE MORE</a></div>
+                    </div>
+                    <div class="choose-elem-item">
+                        <img src="img/flag.png" alt="flag icon">
+                        <h3>YOUR TITLE</h3>
+                        <p>Praesent rutrum ligula et nulla vestibulum lacinia.</p>
+                        <div class="see-more"><a hreh="#">SEE MORE</a></div>
+                    </div>
+                </div>
+              </article>
+          </div>      
+      </article>
+      <article id="products" class="products">
+        <h2 class="products-title"><span>OUR</span> PRODUCTS</h2>
+        <section id="prodCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#prodCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#prodCarousel" data-slide-to="1"></li>
+                <li data-target="#prodCarousel" data-slide-to="2"></li>
+            </ol>   
+            <div class="carousel-inner">
+                <section class="active item">
+                    <div class="product-inside">
+                        <div class="product-item">
+                            <img src="img/product1.png" alt="hot dog pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product2.png" alt="sleeping man pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product3.png" alt="brainlamp pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product4.png" alt="machine pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product5.png" alt="head and pensil">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product6.png" alt="room pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="item">
+                    <div class="product-inside">
+                        <div class="product-item">
+                            <img src="img/product1.png" alt="hot dog pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product2.png" alt="sleeping man pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product3.png" alt="brainlamp pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product4.png" alt="machine pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product5.png" alt="head and pensil">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product6.png" alt="room pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="item">
+                    <div class="product-inside">
+                        <div class="product-item">
+                            <img src="img/product1.png" alt="hot dog pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product2.png" alt="sleeping man pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product3.png" alt="brainlamp pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product4.png" alt="machine pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product5.png" alt="head and pensil">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/product6.png" alt="room pic">
+                            <div class="product-text">
+                                <h3>TITLE</h3>
+                                <p>Best Product</p>
+                                <small>Duis aliquet sagittis nibh at volutpat. Suspendisse potenti.</small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>  
+      </article>
+      <article id="about" class="container about">
+          <div class="row">
+              <h2 class="main-title"><span>ABOUT</span> US</h2>
+              <div class="info">
+              <p class="about-grey-text"> Quisque consequat, nulla eget varius elementum, massa urna rhoncus lectus, quis gravida dolor enim suscipit diam. Ut felis sapien, tempus non sem in, pretium feugiat ex. Nulla facilisi.</p>
+              <p class="about-black-text">Donec id mi pretium, ultricies orci vitae, sodales sem. Nam tempor diam eget ipsum interdum, eget tempor arcu semper. Duis semper posuere velit, eget mollis nibh sagittis non. Morbi sed neque sollicitudin, lacinia urna a, finibus ipsum. Phasellus nec dui nunc. Pellentesque sagittis tellus eu iaculis dictum. Proin ac elementum nulla, luctus ultrices justo.</p>
+              <div class="statistic">
+                 <div class="statistic-item">
+                    <p>PHOTOSHOP</p>
+                    <p>79%</p>
+                    <div class="procents">
+                        <div id="phprocent"></div>
+                    </div>
+                  </div>
+                  <div class="statistic-item">
+                    <p>HTML/CSS</p>
+                    <p>90%</p>
+                    <div class="procents">
+                        <div id="htmlCss"></div> 
+                    </div>
+                  </div>
+                  <div class="statistic-item">
+                    <p>JAVASCRIPT</p>
+                    <p>69%</p>
+                    <div class="procents">
+                        <div id="js"></div> 
+                    </div>
+                  </div>
+                  <div class="statistic-item">
+                    <p>WORDPRESS</p>
+                    <p>92%</p>
+                    <div class="procents">
+                        <div id="word"></div>  
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <img src="img/ipad.png" alt="plansheet pic">
+              <h2 class="main-title">GET IN<span> TOUCH</span></h2>
+              <p class="about-touch-subtitle"> Quisque consequat, nulla eget varius elementum, massa urna rhoncus lectus, quis gravida dolor enim suscipit diam. Ut felis sapien, tempus non sem in, pretium feugiat ex. Nulla facilisi.</p>
+          </div>
+      </article>
+      <footer>
+        <div id="map"></div>
+        <div class="opacity">
+            <form action="#">
+                <div class="form-inputs">
+                    <input type="text" name="name" placeholder="Full Name">
+                    <input type="email" name="email" placeholder="E-mail Addres">
+                    <textarea></textarea>
+                    <div>
+                        <div id="checkbox">
+                            <div id="one"></div>
+                            <div id="two"></div>
+                        </div>
+                        <p>I like your company</p>
+                    </div>
+                    <input type="submit" class="submit-btn" name="btm" value="Send">
+                </div>
+                <div class="adress">
+                    <p>69/A, Some Street Name Your City, code 01234<br>Country Name</p><br>
+                    <a href="tel:+8801234567889">+880 123 456 78 89</a><br>
+                    <a href="tel:+8609876487495">+860 987 648 74 95</a><br><br>
+                    <a href="mailto:company@mail.com">company@mail.com</a><br>
+                    <a href="mailto:sales@mail.com">sales@mail.com</a><br>
+                </div>
+            </form>  
+        </div>
+        <div class="bottom">
+            <p>Copyright © Company. All Rights Reserved 2016</p> 
+            <aside>
+                <a href=""><img src="img/fb-logo.png" alt="facebook logo"></a>
+                <a href=""><img src="img/googleplus.png" alt="google plus logo"></a>
+                <a href=""><img src="img/twitter.png" alt="twitter logo"></a>
+                <a href=""><img src="img/dribbble.png" alt=" dribbble logo"></a>
+            </aside>
+        </div>
+      </footer>
+  </body>
+</html> 
